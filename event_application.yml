@@ -3,73 +3,103 @@ options:
   hide_mlh_toc: False
   min_resume_age: 17
 custom_fields:
- - name: linkedin_url
-   label: 'LinkedIn URL'
-   validate_regex: '\A(https:\/\/)?(www.)?linkedin.com\/in\/\S+\z'
-   validate_error: 'Your Linkedin URL is invalid. Example format: https://linkedin.com/in/yourprofile'
- - name: github_url
-   label: 'GitHub URL'
-   validate_regex: '\A(https:\/\/)?(www.)?github.com\/\S+\z'
-   validate_error: 'Your Github URL is invalid. Example format: https://github.com/yourprofile'
- - name: other_url
-   label: 'Other website URL'
- - name: been_to_hackathon
-   label: 'Have you been to a hackathon before?'
-   type: boolean
-   required: True
-   toggle_field: how_many_hackathons
- - name: how_many_hackathons
-   label: "About how many hackathons have you attended?"
-   type: select
-   options:
+  - name: workshop_hosting
+    label: "Are you interested in hosting a workshop?"
+    type: select
+    required: True
+    options:
+      - Yes, I am interested in hosting a workshop.
+      - No, I am not interested in hosting a workshop.
+  - name: workshop_topic
+    label: "If applicable, what is your workshop about?"
+  - name: hack_preference
+    label: "What technologies are you interested in?"
+    type: select
+    required: True
+    options:
+      - Front-end development
+      - Back-end development
+      - Full-stack development
+      - Mobile development
+      - Hardware engineering
+      - None, I am interested in something else
+  - name: vaccination_status
+    label: "Are you fully vaccinated?"
+    type: select
+    required: True
+    options:
+      - Yes, I am fully vaccinated with my primary series.
+      - No, I am not vaccinated with my primary series.
+  - name: linkedin_url
+    label: 'LinkedIn URL'
+    validate_regex: '\A(https:\/\/)?(www.)?linkedin.com\/in\/\S+\z'
+    validate_error: 'Your Linkedin URL is invalid. Example format: https://linkedin.com/in/yourprofile'
+  - name: github_url
+    label: 'GitHub URL'
+    validate_regex: '\A(https:\/\/)?(www.)?github.com\/\S+\z'
+    validate_error: 'Your Github URL is invalid. Example format: https://github.com/yourprofile'
+  - name: other_url
+    label: 'Other website URL'
+  - name: been_to_hackathon
+    label: 'Have you been to a hackathon before?'
+    type: boolean
+    required: True
+    toggle_field: how_many_hackathons
+  - name: how_many_hackathons
+    label: "About how many hackathons have you attended?"
+    type: select
+    options:
     - 1
     - 2
     - 3
     - 4
     - 5 or more
-   hidden: True
- - name: been_to_redpandahacks
-   label: 'Have you previously attended RedPandaHacks?'
-   type: boolean
-   required: True
-   toggle_field: previous_redpandahacks_comments
- - name: previous_redpandahacks_comments
-   label: "Since you've attended RedPandaHacks before, is there anything new or different you'd like to see at RedPandaHacks I?"
-   type: textarea
-   max_chars: 500
-   hidden: True
- - name: programming_skills
-   label: "Programming Skills (select all that apply, and if you don't know many that's okay!)"
-   type: multiselect
-   options:
+    hidden: True
+  - name: been_to_hackher413
+    label: 'Have you previously attended HackHer413?'
+    type: boolean
+    required: True
+    toggle_field: previous_hackher413_comments
+  - name: previous_hackher413_comments
+    label: "Since you've attended HackHer413 before, is there anything new or different you'd like to see at HackHer413 2023?"
+    type: textarea
+    max_chars: 500
+    hidden: True
+  - name: programming_skills
+    label: "Programming Skills (select all that apply, and if you don't know many that's okay!)"
+    type: multiselect
+    options:
     - HTML/CSS
-    - Javascript/Node
+    - Javascript/Node.js
+    - TypeScript
     - PHP
     - SQL
     - Ruby
     - Java
     - Kotlin
     - Swift
-    - Objective C
+    - Objective-C
     - C/C++/C#
     - Python
- - name: hardware_skills
-   label: 'Hardware Skills (select all that apply)'
-   type: multiselect
-   options:
+    - Go
+    - Rust
+  - name: hardware_skills
+    label: 'Hardware Skills (select all that apply)'
+    type: multiselect
+    options:
     - Embedded Systems
     - Robotics
     - Wireless Communications
     - Circuits
     - 3D Printing
- - name: other_skills
-   label: 'If there are any other tech-related skills not listed above that you would like to share, list them below'
-   type: textarea
-   max_chars: 500
- - name: get_out_of_hum
-   label: 'What would you like to get out of RedPandaHacks? (select all that apply)'
-   type: multiselect
-   options:
+  - name: other_skills
+    label: 'If there are any other tech-related skills not listed above that you would like to share, list them below'
+    type: textarea
+    max_chars: 500
+  - name: get_out_of_hackher413
+    label: 'What would you like to get out of HackHer413? (select all that apply)'
+    type: multiselect
+    options:
     - Learn more about hardware and hardware hacking
     - Learn more about web programming
     - Learn more about AI and machine learning
@@ -78,16 +108,16 @@ custom_fields:
     - Hack with people you don't know
     - Receive swag items from sponsors
     - Network with sponsors
- - name: interested_in_beginner
-   label: "Would you be interested in a 'beginner track' with specialized workshops to help you learn more about hardware and software hacking?"
-   type: boolean
-   required: True
- - name: how_did_you_hear
-   label: 'How did you hear about RedPandaHacks?'
-   type: multiselect
-   required: True
-   options:
-    - I previously attended RedPandaHacks
+  - name: interested_in_beginner
+    label: "Would you be interested in a 'beginner track' with specialized workshops to help you learn more about hardware and software hacking?"
+    type: boolean
+    required: True
+  - name: how_did_you_hear
+    label: 'How did you hear about HackHer413?'
+    type: multiselect
+    required: True
+    options:
+    - I previously attended HackHer413
     - From the MLH website
     - From HackHer413
     - From another MLH event
@@ -95,14 +125,25 @@ custom_fields:
     - From a teacher
     - From a friend
     - Social media
-    - RedPandaHacks t-shirt guerilla marketing
-    - I go to UMass
+    - HackHer413 t-shirt guerilla marketing
     - Other
- - name: what_hardware
-   label: 'What hardware do you want to see at RedPandaHacks?'
-   type: 'textarea'
-   max_chars: 500
- - name: fun_question
-   label: "Phew! That application was a bit long, but you're almost done! :D Just for fun... what's your spirit animal?"
-
-
+  - name: other_how_did_you_hear
+    label: "If you selected other above, please describe."
+    type: "textarea"
+    max_chars: 100
+  - name: hardware_suggestion
+    label: "What type of hardware would you want to see at the event?"
+    type: "textarea"
+    max_chars: 500
+  - name: snacks_suggestion
+    label: "What snacks would you want to see at the event?"
+    type: "textarea"
+    max_chars: 500
+  - name: prizes_suggestion
+    label: "What prizes would you want to see at the event?"
+    type: "textarea"
+    max_chars: 500
+  - name: song_recommendation
+    label: "Any song recommendations for us to play at the event?"
+    type: "textarea"
+    max_chars: 100
