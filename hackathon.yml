@@ -3,39 +3,39 @@ version: 2023 # Could also be a roman numeral or other number, will be concatena
 main_website: https://www.hackher413.com/
 dashboard_url: https://dashboard.hackher413.com
 logos:
-  primary_path: HackHerLogo.png
-  nav_path: navlogo.png
-  favicon_url: https://www.hackher413.com/assets/images/2023/favicon.ico
+    primary_path: HackHerLogo.png
+    nav_path: navlogo.png
+    favicon_url: https://www.hackher413.com/assets/images/2023/favicon.ico
 emails:
-  donotreply: hackher413@gmail.com
-  contact: hackher413@gmail.com
-  email_verification: false
+    donotreply: noreply@hackher413.com
+    contact: hackher413@gmail.com
+    email_verification: false
 slack:
-  enabled: true
-  subdomain: hackher413-2023
+    enabled: true
+    subdomain: hackher413-2023
 applications:
-  mode: 'open'
-  # options: open, waitlist, or closed. defaults to closed.
-  # The applications are still not opened unless the applications feature
-  # flag is enabled.
+    mode: "open"
+    # options: open, waitlist, or closed. defaults to closed.
+    # The applications are still not opened unless the applications feature
+    # flag is enabled.
 checkin:
-  # Any participant with this email domain will be counted as from the host university
-  university_email_suffix: umass.edu
-  university_name: UMass
-  university_name_checks:
-    - University of Massachusetts Amherst
-    - UMass Amherst
-    - UMass-Amherst
-    - UMass at Amherst
-    - UMass, Amherst
+    # Any participant with this email domain will be counted as from the host university
+    university_email_suffix: umass.edu
+    university_name: UMass
+    university_name_checks:
+        - University of Massachusetts Amherst
+        - UMass Amherst
+        - UMass-Amherst
+        - UMass at Amherst
+        - UMass, Amherst
 projects:
-  public: true
-  hacking_begins: "Feb 25, 2023 10:00:00"
-  hacking_ends: "Feb 26, 2023 10:00:00"
+    public: true
+    hacking_begins: "Feb 25, 2023 10:00:00"
+    hacking_ends: "Feb 26, 2023 10:00:00"
 # List all codes here which can be redeemed on Dashboard to grant permissions
 # This is useful for judges and mentors who show up to the event and need an account
 # with more permissions, and can save time and effort of an organizer
 # Format is code:role granted
 codes:
-  rdSWfWZjCKpanZyC: mentor
-  hGMvjgyrVPbxaUBY: admin
+    rdSWfWZjCKpanZyC: mentor
+    hGMvjgyrVPbxaUBY: admin
