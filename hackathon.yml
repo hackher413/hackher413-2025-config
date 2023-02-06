@@ -12,7 +12,7 @@ emails:
     email_verification: false
 slack:
     enabled: true
-    subdomain: hackher413-2023
+    subdomain: hackher4132023
 applications:
     mode: "open"
     # options: open, waitlist, or closed. defaults to closed.
