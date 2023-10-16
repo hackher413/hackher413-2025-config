@@ -12,6 +12,8 @@ emails:
 slack:
     enabled: true
     subdomain: hackher4132024
+discord:
+  enabled: false
 applications:
     mode: "open"
     # options: open, waitlist, or closed. defaults to closed.
