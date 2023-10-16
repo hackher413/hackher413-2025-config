@@ -7,7 +7,6 @@ logos:
     nav_path: navlogo.png
     favicon_url: https://www.hackher413.com/assets/images/2024/favicon.ico
 emails:
-    donotreply: noreply@hackher413.com
     contact: hackher413@gmail.com
     email_verification: false
 slack:
@@ -36,6 +35,3 @@ projects:
 # This is useful for judges and mentors who show up to the event and need an account
 # with more permissions, and can save time and effort of an organizer
 # Format is code:role granted
-codes:
-    rdSWfWZjCKpanZyC: mentor
-    hGMvjgyrVPbxaUBY: admin
