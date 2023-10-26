@@ -10,7 +10,7 @@ emails:
     contact: hackher413@gmail.com
     email_verification: false
 slack:
-    enabled: false
+    enabled: true
     subdomain: hackher4132024
 discord:
   enabled: false
