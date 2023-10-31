@@ -202,10 +202,6 @@ custom_fields:
       - Hack with people you don't know
       - Receive swag items from sponsors
       - Network with sponsors
-  - name: interested_in_beginner
-    label: "Would you be interested in participating in a 'beginner's track' with specialized workshops to help you learn more about hardware and software hacking?"
-    type: boolean
-    required: True
   - name: how_did_you_hear
     label: "How did you hear about HackHer413?"
     type: multiselect
