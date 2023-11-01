@@ -11,7 +11,7 @@ emails:
     email_verification: false
 slack:
     enabled: true
-    subdomain: hackher4132024
+    subdomain: hackher413-2024
 discord:
   enabled: false
 applications:
