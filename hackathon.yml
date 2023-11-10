@@ -7,7 +7,8 @@ logos:
     nav_path: navlogo.png
     favicon_url: https://www.hackher413.com/assets/images/2024/favicon.ico
 emails:
-    contact: noreply@hackher413.com
+    contact: hackher413@gmail.com
+    noreply: noreply@hackher413.com
     email_verification: false
 slack:
     enabled: true
