@@ -236,5 +236,12 @@ custom_fields:
     type: "textarea"
     max_chars: 500
   - name: song_recommendation
-    label: "Any song recommendations for us to play at the event?"
+    label: "Any song recommendations for us to play at the event? Please enter a Spotify link: "
     type: "textarea"
+    pattern: ^(?!.*[\s])(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[A-Za-z\d@$!%*#?&]{8,}$
+    description: |
+      -   At least 8 characters
+      -   At least one uppercase letter
+      -   At least one lowercase letter
+      -   At least one digit
+      -   Allowed special characters: @$!%*#?&
