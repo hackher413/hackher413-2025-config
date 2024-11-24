@@ -1,5 +1,5 @@
 name: HackHer413
-version: 2024 # Could also be a roman numeral or other number, will be concatenated with the hackathon name where necessary
+version: 2025 # Could also be a roman numeral or other number, will be concatenated with the hackathon name where necessary
 main_website: https://www.hackher413.com/
 dashboard_url: https://dashboard.hackher413.com
 logos:
@@ -32,8 +32,8 @@ checkin:
         - UMass, Amherst
 projects:
     public: true
-    hacking_begins: "Feb 17, 2024 10:00:00"
-    hacking_ends: "Feb 18, 2024 10:00:00"
+    hacking_begins: "Feb 17, 2025 10:00:00"
+    hacking_ends: "Feb 18, 2025 10:00:00"
 # List all codes here which can be redeemed on Dashboard to grant permissions
 # This is useful for judges and mentors who show up to the event and need an account
 # with more permissions, and can save time and effort of an organizer
