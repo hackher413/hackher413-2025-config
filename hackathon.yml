@@ -5,7 +5,7 @@ dashboard_url: https://dashboard.hackher413.com
 logos:
     primary_path: HackHer2025.png
     nav_path: HackHer2025.png
-    favicon_url: https://www.hackher413.com/assets/images/bee.ico
+    favicon_url: bee.png
 emails:
     contact: hackher413@gmail.com
     noreply: noreply@hackher413.com
