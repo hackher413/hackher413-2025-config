@@ -11,8 +11,8 @@ emails:
     noreply: noreply@hackher413.com
     email_verification: false
 slack:
-    enabled: true
-    subdomain: hackher413-2024
+    enabled: false
+    # subdomain: hackher413-2024
 discord:
   enabled: false
 applications:
