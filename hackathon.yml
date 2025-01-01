@@ -14,7 +14,8 @@ slack:
     enabled: false
     # subdomain: hackher413-2024
 discord:
-  enabled: false
+  enabled: true
+  server_id: 1309430465450606592
 applications:
     mode: "open"
     # options: open, waitlist, or closed. defaults to closed.
