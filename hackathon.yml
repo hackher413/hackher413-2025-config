@@ -1,4 +1,4 @@
-name: HackHer413
+name: Hack(H)er413
 version: 2025 # Could also be a roman numeral or other number, will be concatenated with the hackathon name where necessary
 main_website: https://www.hackher413.com/
 dashboard_url: https://dashboard.hackher413.com
@@ -14,7 +14,12 @@ slack:
     enabled: false
     # subdomain: hackher413-2024
 discord:
-  enabled: false
+  enabled: true
+  server_id: 1309430465450606592
+  teamforming_channel_id: 1326303382050443354
+  ask_mentor_channel_id: 1326306268410941532
+  general_channel_id: 1309430467203698741
+  invite_url: https://discord.gg/RkaCr7Y9
 applications:
     mode: "open"
     # options: open, waitlist, or closed. defaults to closed.
