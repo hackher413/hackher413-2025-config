@@ -19,7 +19,7 @@ discord:
   teamforming_channel_id: 1326303382050443354
   ask_mentor_channel_id: 1326306268410941532
   general_channel_id: 1309430467203698741
-  invite_url: https://discord.gg/RkaCr7Y9
+  invite_url: https://discord.gg/kcHXeKkZ
 applications:
     mode: "open"
     # options: open, waitlist, or closed. defaults to closed.
